@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+   <!-- <include layout="@layout/header_afterlogin" android:id="@+id/indlay"/>-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="0.2"
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+
+                android:src="@mipmap/logos"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text=" "/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/logotext"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:text="Greens Florist"
+
+                android:textSize="44dp" />
+
+            <EditText
+                android:id="@+id/EditText_email"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_radius"
+
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="6dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+
+            <EditText
+                android:id="@+id/EditText_password"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_radius"
+
+                android:hint="Password"
+                android:paddingLeft="10dp"
+                android:paddingRight="6dp"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+
+            <Button
+                android:id="@+id/loginbtn"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_btn"
+                android:text="login"
+                android:textColor="#fff"
+
+                android:textSize="12dp" />
+
+
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#d2d2d2"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.8"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Don't have an account?"
+                android:textSize="15dp"
+                android:textColor="#4e4e4e" />
+
+            <TextView
+                android:id="@+id/signupbtn"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:background="#00000000"
+                android:text="signup"
+                android:textColor="#4e4e4e"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

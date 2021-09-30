@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandable="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/relativeLayoutMain"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Sub Total:"
+        android:textColor="#4a9fb2"
+        android:id="@+id/textViewSubTotal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="000"
+        android:gravity="right"
+        android:textColor="#4a9fb2"
+        android:id="@+id/textViewSubTotalValue"
+        android:layout_alignTop="@+id/textViewSubTotal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Shipping Cost:"
+        android:layout_marginTop="12dp"
+        android:textColor="#4a9fb2"
+        android:id="@+id/textViewShippingCost"
+        android:layout_below="@+id/textViewSubTotal"
+        android:layout_alignLeft="@+id/textViewSubTotal"
+        android:layout_alignStart="@+id/textViewSubTotal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="000"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#4a9fb2"
+        android:id="@+id/textViewShippingCostValue"
+        android:layout_alignTop="@+id/textViewShippingCost"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Discount:"
+        android:textColor="#4a9fb2"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textViewDiscount"
+        android:layout_below="@+id/textViewShippingCost"
+        android:layout_alignLeft="@+id/textViewShippingCost"
+        android:layout_alignStart="@+id/textViewShippingCost"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:gravity="right"
+        android:textColor="#4a9fb2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/textViewDiscountValue"
+        android:layout_alignTop="@+id/textViewDiscount"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <View
+        android:id="@+id/viewTotalPrice"
+        android:layout_width="300dp"
+        android:background="#cecece"
+        android:layout_height="0.7dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignRight="@+id/textViewNetPayableValue"
+        android:layout_alignEnd="@+id/textViewNetPayableValue"
+        android:layout_below="@+id/textViewDiscount"
+        android:layout_alignLeft="@+id/textViewDiscount"
+        android:layout_alignStart="@+id/textViewDiscount" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Net Payable:"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textViewNetPayable"
+        android:layout_below="@+id/viewTotalPrice"
+        android:layout_alignLeft="@+id/textViewDiscount"
+        android:layout_alignStart="@+id/textViewDiscount"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:textStyle="bold"
+        android:textColor="#ff0000"
+        android:id="@+id/textViewNetPayableValue"
+        android:layout_alignTop="@+id/textViewNetPayable"/>
+
+
+</RelativeLayout>
+

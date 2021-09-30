@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_weight="1"
+        android:background="#58d3d7" />
+
+    <FrameLayout
+        android:id="@+id/frameLayoutPreview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view2"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="20dp" >
+
+        <ImageView
+            android:id="@+id/imageViewFlash"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/flash" />
+
+        <ImageView
+            android:id="@+id/imageViewRefresh"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imageViewFlash"
+            android:src="@drawable/refresh" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutFocus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayoutCancel"
+            android:layout_below="@+id/imageViewFlash"
+            android:paddingBottom="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="30dp" >
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#000000" />
+
+            <View
+                android:id="@+id/View01"
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/view3"
+                android:background="#000000" />
+
+            <View
+                android:id="@+id/View02"
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_alignLeft="@+id/view3"
+                android:layout_alignParentBottom="true"
+                android:background="#000000" />
+
+            <View
+                android:id="@+id/View03"
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/View02"
+                android:layout_toLeftOf="@+id/View01"
+                android:background="#000000" />
+
+            <View
+                android:id="@+id/View04"
+                android:layout_width="20dp"
+                android:layout_height="2dp"
+                android:layout_alignBottom="@+id/View02"
+                android:layout_toRightOf="@+id/View02"
+                android:background="#000000" />
+
+            <View
+                android:id="@+id/View05"
+                android:layout_width="20dp"
+                android:layout_height="2dp"
+                android:layout_alignBottom="@+id/View03"
+                android:layout_toLeftOf="@+id/View03"
+                android:background="#000000" />
+
+            <View
+                android:id="@+id/View06"
+                android:layout_width="20dp"
+                android:layout_height="2dp"
+                android:layout_alignLeft="@+id/View04"
+                android:layout_alignTop="@+id/view3"
+                android:background="#000000" />
+
+            <View
+                android:id="@+id/View07"
+                android:layout_width="20dp"
+                android:layout_height="2dp"
+                android:layout_alignRight="@+id/View01"
+                android:layout_alignTop="@+id/View01"
+                android:background="#000000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignRight="@+id/imageViewRefresh"
+            android:layout_alignTop="@+id/relativeLayoutCancel"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageViewUpload"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/upload" />
+
+            <TextView
+                android:id="@+id/textViewUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageViewUpload"
+                android:text="\tUpload"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/relativeLayout1"
+            android:layout_alignParentBottom="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageViewCancel"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:padding="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/cancel" />
+
+            <TextView
+                android:id="@+id/textViewCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageViewCancel"
+                android:text="\tCancel"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:background="#424242" />
+
+    <ImageView
+        android:id="@+id/imageViewCapture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:src="@drawable/click" />
+
+</RelativeLayout>

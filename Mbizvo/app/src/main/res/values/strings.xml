@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">EMRAS</string>
+    <string name="title_activity_maps">Hospitals</string>
+    <!--<string name="google_maps_key">AIzaSyCxeQhdKMv3_HFql_ZttTt2Vll1HEOZtog</string>-->
+    <string name="google_maps_key">AIzaSyDBTKIB6_A44GntlTpM0uI-IA6796LHVW0</string>
+
+    <string name="welcome_back">Welcome Back</string>
+    <string name="read_it_together">User Authentication</string>
+    <string name="skip">Cancel</string>
+    <string name="login">Login</string>
+    <string name="email">Phone number</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forget_password">Not connecting? | Setup host</string>
+
+    <string-array name="user_types">
+        <item>Technician</item>
+        <item>Admin</item>
+    </string-array>
+
+    <string-array name="fault_status">
+        <item>Completed</item>
+        <item>Pending</item>
+    </string-array>
+</resources>

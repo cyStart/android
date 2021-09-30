@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/seatsellelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_marginBottom="60dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:foregroundGravity="center"
+                android:padding="12dp"
+                android:src="@drawable/logonrz" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="ABOUT US"
+                android:textColor="#245366"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Who are we?\n\n
+The National Railways of Zimbabwe (NRZ) is a designated body in terms of a Zimbabwean Act of Parliament. It is wholly owned by the Government of Zimbabwe  and operates in accordance with the public sector rules and regulations.\n\n The NRZ mandate is to operate an competitive bulk rail transportation service for bulk goods(freight) and passengers. It was established in 1897 and operates a system that is 2 760 route kilometers of 1 067mm gauge track. It is geographical positioned as the hub and gateway to the region of Southern Africa Development Community (SADC).\n\n National Railways of Zimbabwe and Mozambique are linked through Mutare/Machipanda border posts to Beira as well as Sango/Chicualacuala that goes to Maputo. South Africa is linked through Beitbridge, Botswana is connected via Plumtree and Victoria Falls to Zambia"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:layout_marginBottom="60dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

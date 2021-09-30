@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayoutMain"
+    tools:context="com.webandcrafts.healwire.ui.upload_photo.UploadActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#44BFB9"
+        android:paddingLeft="20dp" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Upload Prescription"
+            android:id="@+id/textViewUploadPrescription"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:background="#cd44BFB9">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2.30"
+            android:background="@drawable/button_upload" >
+
+            <TextView
+                android:id="@+id/textViewCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="\tCancel"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/imageViewCancel"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/textViewCancel"
+                android:src="@drawable/cancel" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#ffffff" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutAboutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2.30"
+            android:background="@drawable/button_upload" >
+
+            <TextView
+                android:id="@+id/textViewUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="\tUpload"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/imageViewUpload"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@+id/textViewUpload"
+                android:layout_alignTop="@+id/textViewUpload"
+                android:layout_toLeftOf="@+id/textViewUpload"
+                android:src="@drawable/upload" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageViewPrescription"
+        android:layout_below="@+id/relativeLayoutTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/linearLayoutButtons" />
+
+
+</RelativeLayout>

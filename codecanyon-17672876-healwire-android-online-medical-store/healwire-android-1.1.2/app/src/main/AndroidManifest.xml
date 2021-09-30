@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.webandcrafts.healwire">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".ui.register.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.profile.ProfileActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.user_address.AddressDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".ui.about_us.AboutusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.activate_account.ActivateAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:icon="@mipmap/launcher"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".ui.my_prescription.MyPrescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my_orders.MyOrdersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my_cart.MyCartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.medicine_details.MedicineInformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.fogot_passwod.ForgotActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.reset_password.ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TakePhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.upload_photo.UploadActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.upload_photo.CameraActivity" />
+        <activity
+            android:name=".AlternativesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SecondActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.prescription_details.PrescriptionDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.payment.WebViewPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my_order_details.OrderDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.payment_response.PaymentResponseActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NewBaseActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

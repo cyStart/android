@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebedef"
+    tools:context="com.webandcrafts.healwire.ui.activate_account.ActivateAccountActivity">
+
+    <LinearLayout
+        android:id="@+id/relativeLayoutTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#44BFB9"
+        android:paddingLeft="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:src="@drawable/ic_back"/>
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Activate Account"
+            android:textColor="#ffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayoutTitle"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBox"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="#ebedef"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/editTextSecurityCode"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_above="@+id/buttonSubmit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/round_edittext"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number" />
+
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textAllCaps="true"
+            android:layout_alignParentBottom="true"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="29dp"
+            android:backgroundTint="@color/buttonBackColor"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+
+
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#68686c" />
+
+        <TextView
+            android:id="@+id/textViewProvideCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/view1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:text="\tProvide Security Code"
+            android:textColor="#ffffff" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#68686c" />
+
+        <View
+            android:id="@+id/View01"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#68686c" />
+
+        <View
+            android:id="@+id/View02"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#68686c" />
+
+    </RelativeLayout>
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:background="#F5F5F5"
+        android:id="@+id/relativeLayoutItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutAction"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/qty_picker_cart_bg"
+            android:paddingBottom="5dp"
+            android:layout_margin="5dp"
+            android:paddingTop="5dp" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutUpQuantity"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/relativeLayoutDownQuantity"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/relativeLayoutDownQuantity"
+                android:focusable="false"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp" >
+
+                <ImageView
+                    android:id="@+id/ImageView01"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/spinner_arrow_up" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/relativeLayoutUpQuantity"
+                android:background="#BDBDBD" />
+
+            <EditText
+                android:id="@+id/editTextQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/relativeLayoutDownQuantity"
+                android:layout_alignTop="@+id/relativeLayoutDownQuantity"
+                android:layout_toLeftOf="@+id/view3"
+                android:layout_toRightOf="@+id/relativeLayoutDownQuantity"
+                android:background="#ffff"
+                android:gravity="center"
+                android:maxLength="3"
+                android:focusable="false"
+                android:numeric="integer"
+                android:text="1"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutDownQuantity"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:focusable="false"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp" >
+
+                <ImageView
+                    android:id="@+id/ImageView03"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/spinner_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/View01"
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:layout_alignRight="@+id/relativeLayoutDownQuantity"
+                android:layout_centerVertical="true"
+                android:background="#BDBDBD" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewGroupMedicineName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/relativeLayoutAction"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="131dp"
+            android:layout_toLeftOf="@+id/relativeLayout1"
+            android:ellipsize="end"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="#6E6E6E" />
+
+    </RelativeLayout>
+
+</LinearLayout>

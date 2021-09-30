@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/dashboard"
+            android:title="Home" />
+    </group>
+
+    <item android:title="Products">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/products"
+                    android:icon="@drawable/users"
+                    android:title="Products" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Users">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/users"
+                    android:icon="@drawable/users"
+                    android:title="Users" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Accounting">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/income"
+                    android:icon="@drawable/add_user"
+                    android:title="Income" />
+                <item
+                    android:id="@+id/expenses"
+                    android:icon="@drawable/add_task"
+                    android:title="Expenses" />
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

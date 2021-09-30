@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebedef"
+    android:id="@+id/relativeLayoutMain"
+    tools:context="com.webandcrafts.healwire.ui.login.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/relativeLayoutTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#44BFB9"
+        android:paddingLeft="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back"/>
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="@string/login_healwire"
+            android:textColor="#ffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayoutTitle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayoutTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/email_id"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:paddingBottom="5dp"
+            android:textSize="13sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textViewEmail"
+            android:background="@drawable/round_edittext"
+            android:padding="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+            <ImageView
+                android:id="@+id/imageViewEmail"
+                android:layout_width="35dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="7dp"
+                android:src="@drawable/email_id" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageViewEmail"
+                android:background="#ffffff"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="12sp" >
+                <requestFocus/>
+            </EditText>
+
+            <View
+                android:id="@+id/viewSeperatorEmail"
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_alignRight="@+id/imageViewEmail"
+                android:layout_centerVertical="true"
+                android:background="#D8D8D8" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="25dp"
+            android:paddingBottom="5dp"
+            android:text="@string/password"
+            android:textSize="13sp"
+            android:layout_below="@+id/relativeLayoutEmail"
+            android:layout_alignLeft="@+id/relativeLayoutEmail"
+            android:layout_alignStart="@+id/relativeLayoutEmail" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textViewPassword"
+            android:background="@drawable/round_edittext"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:layout_alignLeft="@+id/textViewPassword"
+            android:layout_alignStart="@+id/textViewPassword"
+            android:layout_alignRight="@+id/relativeLayoutEmail"
+            android:layout_alignEnd="@+id/relativeLayoutEmail">
+
+            <ImageView
+                android:id="@+id/imageViewPassword"
+                android:layout_width="35dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:padding="7dp"
+                android:src="@drawable/password" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageViewPassword"
+                android:background="#ffffff"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/viewSeperatorPassword"
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_alignRight="@+id/imageViewPassword"
+                android:layout_centerVertical="true"
+                android:background="#D8D8D8" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/textViewForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:paddingTop="20dp"
+            android:text="@string/forgot_password"
+            android:textColor="#FF4000"
+            android:textSize="13sp"
+            android:layout_below="@+id/relativeLayoutPassword"
+            android:layout_alignLeft="@+id/relativeLayoutPassword"
+            android:layout_alignStart="@+id/relativeLayoutPassword" />
+
+          <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Log in"
+            android:id="@+id/buttonLogin"
+            android:textAllCaps="true"
+            android:backgroundTint="@color/buttonBackColor"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_marginTop="70dp"
+            android:layout_below="@+id/textViewForgotPassword"
+            android:layout_alignLeft="@+id/textViewForgotPassword"
+            android:layout_alignStart="@+id/textViewForgotPassword" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutFooter"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/buttonLogin"
+            android:layout_alignLeft="@+id/buttonLogin"
+            android:layout_alignStart="@+id/buttonLogin"
+            android:layout_alignRight="@+id/relativeLayoutPassword"
+            android:layout_alignEnd="@+id/relativeLayoutPassword">
+
+            <View
+                android:id="@+id/viewSeperatorFooter"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="18dp"
+                android:background="#DADADA" />
+
+            <TextView
+                android:id="@+id/textViewClickHere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textViewNewToHealwire"
+                android:layout_alignBottom="@+id/textViewNewToHealwire"
+                android:layout_toRightOf="@+id/textViewNewToHealwire"
+                android:text=" Click here "
+                android:textColor="#04B431"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textViewToRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textViewClickHere"
+                android:layout_alignBottom="@+id/textViewClickHere"
+                android:layout_toRightOf="@+id/textViewClickHere"
+                android:text="@string/to_register"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textViewNewToHealwire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="@string/new_to_healwire"
+                android:textSize="12sp" />
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

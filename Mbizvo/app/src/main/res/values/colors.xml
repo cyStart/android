@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e30615</color>
+    <color name="colorPrimaryDark">#087AA8</color>
+    <color name="colorAccent">#2e2d8a</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="colorBackground">#e30615</color>
+    <color name="colorSplashText">#F0F0F0</color>
+    <color name="colorProgressBar">#e30615</color>
+    <color name="colorTextView">#83898E</color>
+</resources>

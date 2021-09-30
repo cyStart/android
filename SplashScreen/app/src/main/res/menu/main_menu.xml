@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="HOME" />
+
+        <item
+            android:id="@+id/nav_tickets"
+            android:icon="@drawable/money"
+            android:title="TICKETS" />
+
+        <item
+            android:id="@+id/nav_upgrade"
+            android:icon="@drawable/appsetting"
+            android:title="UPGRADE" />
+        <item
+            android:id="@+id/nav_stations"
+            android:icon="@drawable/t5"
+            android:title="STATIONS" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/users"
+            android:title="PROFILE" />
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="PROFILES">
+
+            <menu>
+
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/star"
+                    android:title="LOGIN" />
+                <item
+                    android:id="@+id/nav_subprofile"
+                    android:icon="@drawable/users"
+                    android:title="PROFILE" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout"
+                    android:title="LOGOUT" />
+
+            </menu>
+
+        </item>
+
+    </group>
+
+    <item android:title="MESSAGE US">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_message"
+                android:icon="@drawable/available"
+                android:title="LOGOUT" />
+
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/info"
+                android:title="ABOUT" />
+
+        </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,256 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:contentPadding="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+
+                        android:layout_width="fill_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_height="fill_parent"
+
+                        >
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1.5"
+                            android:visibility="gone"
+                            android:weightSum="2"
+                            >
+                            <ImageView
+                                android:id="@+id/primg"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:visibility="gone"
+                                android:layout_weight="0.4"
+                                android:src="@mipmap/logos"
+                                />
+                            <TextView
+                                android:id="@+id/cmp"
+                                android:layout_width="fill_parent"
+                                android:layout_weight="1.6"
+                                android:text="Complete"
+                                android:visibility="gone"
+                                android:gravity="center"
+                                android:textSize="14dp"
+                                android:textColor="#fff"
+
+                                android:layout_height="fill_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.5"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:id="@+id/pronam"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="6dp"
+                                        android:text="Student Name:"
+                                        android:textColor="#000"
+                                        android:textSize="14dp" />
+
+                                    <TextView
+                                        android:id="@+id/subjectName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Subject name:"
+                                        android:textColor="#acaaaa"
+                                        android:textSize="12dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <TextView
+                                            android:id="@+id/startdt"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Class start"
+                                            android:textColor="#f23636"
+                                            android:textSize="14dp" />
+
+                                        <TextView
+                                            android:id="@+id/enddt"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="right|center"
+                                            android:text="Class end"
+                                            android:textColor="#f23636"
+                                            android:textSize="14dp" />
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="6dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/teacherName"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="left|center"
+                                            android:text="Teacher Name"
+                                            android:textColor="#606060"
+
+                                            android:textSize="14dp"
+                                            android:visibility="gone" />
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/courceName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="6dp"
+                                        android:text="Cource"
+
+                                        android:textColor="#606060"
+                                        android:textSize="14dp" />
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:gravity="right"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:id="@+id/bookingbtn"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="40dp"
+                                            android:layout_margin="6dp"
+                                           android:gravity="center"
+android:padding="8dp"
+                                            android:background="@drawable/button_ra"
+                                            android:text="Booking"
+                                            android:textColor="#fdfcfc"
+                                            android:textSize="14dp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.5"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <ImageView
+                                        android:id="@+id/deletbtn"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scaleType="fitXY"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="xzcjhzxkchkzxh"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:textColor="#ff8cc4"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="fill_parent"
+                    android:layout_below="@+id/textView"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:text="Cake"
+
+                    android:textColor="#fff"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayoutMain"
+    android:background="#ebedef"
+    tools:context="com.webandcrafts.healwire.AlternativesActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#58d3d7"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/textViewSubstitute"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="14dp"
+            android:text="Alternatives"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            />
+
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/group_text"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_toRightOf="@+id/iv_sub"-->
+        <!--android:paddingRight="20dp" >-->
+
+        <!--</RelativeLayout>-->
+
+
+        <TextView
+            android:id="@+id/textViewAlternatives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textViewSubstitute"
+            android:ellipsize="end"
+            android:maxEms="18"
+            android:singleLine="true"
+            android:text="(Alternatives)"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/relativeLayoutTitle"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1.12"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:id="@+id/textViewHeading"
+            android:text="Name\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPrice\t\t"
+            android:textColor="#6E6E6E" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutListMedicines"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/linearLayoutHeader">
+
+        <ListView
+            android:id="@+id/listViewAlternatives"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:clickable="false"
+            android:divider="#ebedef"
+            android:dividerHeight="2dp" >
+
+        </ListView>
+
+        <TextView android:id="@id/android:empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:visibility="gone"
+            android:text="No Alternative medicines found."
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

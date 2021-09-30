@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.240625" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/drawable/ic_launcher_background.xml" value="0.240625" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/activity_issue_ticket.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/activity_search_result.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/activity_splash.xml" value="0.18342391304347827" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/activity_test_menu.xml" value="0.1539855072463768" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/activity_ticket_complete.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/activity_ticketing.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/activity_upgrade_ticket.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/content_navdrawer.xml" value="0.21" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/fragment_about_us.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/fragment_add_seat.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/fragment_dayend.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/fragment_gallery.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/fragment_home.xml" value="0.18" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/fragment_journey.xml" value="0.2" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/fragment_passenger_details.xml" value="0.1743659420289855" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/fragment_payment.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/fragment_report.xml" value="0.17980072463768115" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/fragment_reports.xml" value="0.22" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/fragment_search_result.xml" value="0.22" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/fragment_seat_selection.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/fragment_seats_available.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/fragment_slideshow.xml" value="0.10733695652173914" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/fragment_sync.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/fragment_ticket.xml" value="0.18342391304347827" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/fragment_ticket_complete.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/fragment_tickets.xml" value="0.22" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/layout/header.xml" value="0.1539855072463768" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/SplashScreen/app/src/main/res/menu/main_menu.xml" value="0.22447916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

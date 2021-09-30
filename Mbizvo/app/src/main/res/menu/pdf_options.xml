@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_whatsapp"
+        app:showAsAction="always"
+        android:title="Whatsapp" />
+
+    <item
+        android:id="@+id/menu_email"
+        app:showAsAction="ifRoom"
+        android:title="Email" />
+
+    <item
+        android:id="@+id/menu_sms"
+        app:showAsAction="ifRoom"
+        android:title="SMS" />
+
+
+</menu>

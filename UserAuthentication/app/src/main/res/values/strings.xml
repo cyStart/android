@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">User Authentication</string>
+    <string name="don_t_have_an_account_already_nregister_here">Don\'t have an Account already?\nRegister here</string>
+    <string name="welcome">Welcome</string>
+    <string name="register">Register</string>
+    <string name="already_registered_nlogin_here">Already Registered?\nLogin Here</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandable="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/relativeLayoutMain"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:id="@+id/imageViewPrescription"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginLeft="12dp"-->
+        <!--android:layout_marginStart="12dp"-->
+        <!--android:layout_marginBottom="12dp"-->
+        <!--android:src="@drawable/no_pres_square" />-->
+
+
+    <!-- Thumbnail Image -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/imageViewPrescription"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/no_pres_square"
+         />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Date added : "
+        android:id="@+id/textViewDate"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="#4a9fb2"
+        android:textSize="16sp"
+        android:layout_alignTop="@+id/imageViewPrescription"
+        android:layout_toRightOf="@+id/imageViewPrescription"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Verification"
+        android:layout_below="@+id/textViewDate"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textViewVerification"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textViewDate"
+        android:layout_alignStart="@+id/textViewDate"
+        />
+
+
+</RelativeLayout>

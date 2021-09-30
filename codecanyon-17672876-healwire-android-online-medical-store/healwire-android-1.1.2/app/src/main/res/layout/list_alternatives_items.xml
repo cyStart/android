@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayoutMain"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:weightSum="2"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/textViewMedicineName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1.53"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="Crocin"
+            android:textColor="#6E6E6E" />
+
+        <TextView
+            android:id="@+id/textViewMedicinePrice"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="right|center"
+            android:layout_weight="0.52"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+
+            android:text="999"
+            android:textColor="#6E6E6E" />
+
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_alter_savings"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:ellipsize="end"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:singleLine="true"-->
+            <!--android:text="9999"-->
+            <!--android:textColor="#6E6E6E" />-->
+
+    </LinearLayout>
+
+</LinearLayout>

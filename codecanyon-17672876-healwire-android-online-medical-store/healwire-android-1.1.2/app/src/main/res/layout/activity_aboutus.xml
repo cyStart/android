@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebedef"
+    tools:context="com.webandcrafts.healwire.ui.about_us.AboutusActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#44BFB9"
+        android:paddingLeft="5dp" >
+
+        <ImageView
+            android:id="@+id/iv_backicon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/textViewAboutus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_backicon"
+            android:text="About Us"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffff"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayoutTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutCompanyInfo"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:background="#ffff"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutAboutTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/app_name"
+                    android:textColor="#2E2E2E"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignLeft="@+id/textView2"
+                    android:layout_below="@+id/textView2"
+                    android:gravity="bottom"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:text="An Online Pharmacy"
+                    android:textColor="#A4A4A4"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#E6E6E6" />
+            </RelativeLayout>
+
+            <TextView
+
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/relativeLayoutAboutTitle"
+                android:layout_below="@+id/relativeLayoutAboutTitle"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/Aboutus"
+                android:textColor="#7C7C7C"
+                android:lineSpacingExtra="3dp"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutContactInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutCompanyInfo"
+            android:layout_marginTop="10dp"
+            android:background="#ffff"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:layout_alignRight="@+id/relativeLayoutCompanyInfo"
+            android:layout_alignEnd="@+id/relativeLayoutCompanyInfo"
+            android:layout_alignLeft="@+id/relativeLayoutCompanyInfo"
+            android:layout_alignStart="@+id/relativeLayoutCompanyInfo">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutContactTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp" >
+
+                <TextView
+
+                    android:id="@+id/textViewContactTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Contact Details"
+                    android:textColor="#2E2E2E"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/View01"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@+id/relativeLayoutContactTitle"
+                android:layout_alignLeft="@+id/relativeLayoutContactTitle"
+                android:background="#E6E6E6" />
+
+            <RelativeLayout
+                android:id="@+id/about_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/relativeLayoutContactTitle"
+                android:layout_alignRight="@+id/relativeLayoutContactTitle"
+                android:layout_alignTop="@+id/View01" >
+
+                <RelativeLayout
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center|left" >
+
+                    <TextView
+
+                        android:id="@+id/textViewEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignBottom="@+id/ImageView03"
+                        android:layout_alignTop="@+id/ImageView03"
+                        android:layout_toRightOf="@+id/ImageView03"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:text="@string/info"
+                        android:textColor="#7C7C7C"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/ImageView03"
+                        android:layout_width="15dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/email" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/email"
+                    android:gravity="center|left" >
+
+                    <TextView
+
+                        android:id="@+id/textViewPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/ImageView01"
+                        android:layout_alignTop="@+id/ImageView01"
+                        android:layout_toRightOf="@+id/ImageView01"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:text="@string/contact_num"
+                        android:textColor="#7C7C7C"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/ImageView01"
+                        android:layout_width="15dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/phone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/RelativeLayout01"
+                    android:paddingBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/TextView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/ImageView02"
+                        android:gravity="center|left"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="20dp"
+                        android:text="@string/address"
+                        android:textColor="#7C7C7C"
+                        android:textSize="14sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/ImageView02"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignBottom="@+id/TextView05"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/address" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

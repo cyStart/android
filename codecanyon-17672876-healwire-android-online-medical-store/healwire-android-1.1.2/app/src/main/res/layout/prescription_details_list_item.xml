@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandable="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/relativeLayoutMain"
+    android:background="#ffffff"
+    android:layout_height="280dp">
+
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+        <!--android:text="Medicine Name"-->
+        <!--android:id="@+id/textViewMedicine"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginLeft="25dp"-->
+        <!--android:layout_marginStart="25dp"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="#4a9fb2"-->
+        <!--android:visibility="invisible"-->
+        <!--android:layout_marginTop="25dp" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Unit Price:"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:id="@+id/textViewUnitPrice"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="000.00"
+        android:gravity="right"
+        android:id="@+id/textViewUnitPriceValue"
+        android:layout_alignTop="@+id/textViewUnitPrice"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Quantity:"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textViewGroupQuantity"
+        android:layout_below="@+id/textViewUnitPrice"
+        android:layout_alignLeft="@+id/textViewUnitPrice"
+        android:layout_alignStart="@+id/textViewUnitPrice"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="00"
+        android:gravity="right"
+        android:id="@+id/textViewQuantityValue"
+        android:layout_alignTop="@+id/textViewGroupQuantity"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <View
+        android:id="@+id/viewSubTotal"
+        android:layout_width="40dp"
+        android:background="#cecece"
+        android:layout_height="0.8dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/textViewGroupQuantity"
+        android:layout_alignRight="@+id/textViewQuantityValue"
+        android:layout_alignEnd="@+id/textViewQuantityValue" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Sub Total:"
+        android:id="@+id/textViewSubTotal"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/textViewGroupQuantity"
+        android:layout_alignLeft="@+id/textViewGroupQuantity"
+        android:layout_alignStart="@+id/textViewGroupQuantity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="000.00"
+        android:gravity="right"
+        android:id="@+id/textViewSubTotalValue"
+        android:layout_alignTop="@+id/textViewSubTotal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Unit Disc                                     "
+        android:layout_marginTop="12dp"
+        android:id="@+id/textViewUnitDisc"
+        android:visibility="gone"
+        android:layout_below="@+id/textViewSubTotal"
+        android:layout_alignLeft="@+id/textViewSubTotal"
+        android:layout_alignStart="@+id/textViewSubTotal"
+        android:layout_alignRight="@+id/textViewSubTotal"
+        android:layout_alignEnd="@+id/textViewSubTotal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Value"
+        android:visibility="gone"
+        android:id="@+id/textViewUnitDiscValue"
+        android:layout_alignTop="@+id/textViewUnitDisc"
+        android:layout_alignLeft="@+id/textViewSubTotalValue"
+        android:layout_alignStart="@+id/textViewSubTotalValue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Discount:"
+        android:id="@+id/textViewDiscount"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/textViewUnitDisc"
+        android:layout_alignLeft="@+id/textViewUnitDisc"
+        android:layout_alignStart="@+id/textViewUnitDisc"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="00.00"
+        android:gravity="right"
+        android:id="@+id/textViewDiscountValue"
+        android:layout_alignTop="@+id/textViewDiscount"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <View
+        android:id="@+id/viewTotalPrice"
+        android:layout_width="300dp"
+        android:background="#cecece"
+        android:layout_height="0.7dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignRight="@+id/textViewQuantityValue"
+        android:layout_alignEnd="@+id/textViewQuantityValue"
+        android:layout_below="@+id/textViewDiscount"
+        android:layout_alignLeft="@+id/textViewTotalPrice"
+        android:layout_alignStart="@+id/textViewTotalPrice" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Total Price:"
+        android:id="@+id/textViewTotalPrice"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="25dp"
+        android:layout_below="@+id/textViewDiscount"
+        android:layout_alignLeft="@+id/textViewDiscount"
+        android:layout_alignStart="@+id/textViewDiscount"
+        android:textSize="14sp"
+        android:textStyle="bold"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="000.00"
+        android:gravity="right"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:id="@+id/textViewTotalPriceValue"
+        android:layout_alignTop="@+id/textViewTotalPrice"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"/>
+
+
+</RelativeLayout>
+
